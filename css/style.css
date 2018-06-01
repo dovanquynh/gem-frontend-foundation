@@ -1,0 +1,325 @@
+body{
+    background: url("../images/mian-bg2.gif");
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+h3{
+    font-weight: 300;
+}
+#main{
+    padding-top: 10px;
+}
+.main-active{
+    margin-left: 208px;
+}
+
+/*Form-login*/
+.login{
+    color: #ffffff;
+    font-weight: normal;
+    margin: 20% auto;
+    max-width: 500px;
+    background: #2A2A2A;
+    border-radius: 5px;
+}
+
+.login-header{
+    background: #3C3C3C;
+    height: 40px;
+    border-radius: 5px 5px 0 0 ;
+    padding-left: 5%;
+}
+.login-header h3,
+.login-form h3 {
+    line-height: 40px;
+}
+
+.login-form{
+    margin-left: 5%;
+}
+
+.login-form button{
+    margin: 20px 0 30px 0;
+}
+
+.login-input{
+    max-width:450px;
+    width: 95%;
+    border-radius:4px;
+    line-height: 30px;
+    border:1px solid #f2f2f2;
+    outline:none;
+    padding-left:10px;
+}
+
+.login-btn{
+    color: #ffffff;
+    height:40px;
+    width:100px;
+    border-radius:4px;
+    border:1px solid #305074;
+    background: #305074;
+}
+/*End-form-login*/
+
+/*Page-404*/
+.error h1 {
+    color: #ffffff;
+    padding: 200px 0 50px 0;
+    font-size: 40px;
+}
+.error a {
+    color: #00A274;
+}
+.error a:hover{
+    text-decoration: none;
+}
+/*End-page-404*/
+
+
+
+.navbar-custom{
+    background: #DFDFDF;
+    height: 40px;
+    display: block;
+}
+.active-side-bar{
+    margin-left: 208px;
+}
+.navbar-toggler-custom{
+    padding: 0;
+}
+.navbar-custom a.navbar-brand{
+    color: #b40404;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.navbar-custom a.navbar-brand:hover{
+    color: #b40404;
+}
+a.navbar-custom-icon{
+    color: #727272;
+    text-decoration: none;
+}
+
+.toggler-icon-custom{
+    color: #ff9600;
+}
+/*End-navbar*/
+
+/*Side-bar*/
+.sidenav {
+    height: 100%;
+    width: 208px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: auto;
+    background-color: #000000;
+    overflow-y: hidden;
+}
+.sidenav-login{
+    margin-top: -4px;
+}
+
+.sidenav-list img{
+    padding-bottom: 5px;
+}
+.sidenav-foot{
+    padding-top: 40px;
+}
+.sidenav-language{
+    padding-top: 15px;
+}
+.sidenav-language a{
+    color: #00B481;
+    text-decoration: none;
+}
+/*End-side-bar*/
+
+
+/*Welcome*/
+.welcome{
+    color: #ffffff;
+    padding-top: 50px;
+}
+.welcome h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+/*End-welcome*/
+
+
+/*List-menu*/
+
+.list-menu a{
+    color: #ffffff;
+}
+.card-style{
+    background: #2A2A2A;
+}
+.card-row-one{
+    margin-top: 50px;
+}
+.card-row-two{
+    margin-top: 30px;
+}
+.card-body-custom{
+    padding: 50px 0;
+}
+.list-menu i{
+    font-size: 7rem;
+}
+/*End-list-menu*/
+
+
+/*Appointment*/
+.calendar{
+    background: #1F1F1F;
+    color: #ffffff;
+}
+.calendar-detail{
+    background: #1F1F1F;
+}
+.card-appointment{
+    background: #1F1F1F;
+    color: #ffffff;
+    width: 70%;
+
+}
+.mode-btn{
+    background: #2A2A2A;
+    border-color: #2A2A2A;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+}
+.style-div-icon{
+    background: #3C3C3C;
+    border-color: #3C3C3C;
+    color: #ffffff;
+}
+.form-btn{
+    float: right;
+}
+.btn-save{
+    background: #00B481;
+    color: #ffffff;
+}
+
+/*End-appointment*/
+
+/*Page-user*/
+.list-main{
+    width: 70%;
+    margin-bottom: 20px;
+    line-height: 4;
+    text-align: center;
+}
+.list-main a{
+     color: #ffffff;
+ }
+.list-main a:hover{
+    text-decoration: none;
+}
+
+.btn-active{
+    background: #305074;
+    color: #ffffff;
+    padding: 10px 40px;
+}
+.input-set-order{
+    width: 70px;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-color: #ffffff;
+}
+.box-action-edit{
+    width: 25px;
+    height: 25px;
+    background: #3C3C3C;
+    float: left;
+    margin: auto;
+}
+.box-action-del{
+    width: 25px;
+    height: 25px;
+    background: #3C3C3C;
+    float: right;
+}
+.no-margin{
+    margin-bottom: 0.1rem;
+}
+/*End-page-user*/
+
+
+/*Set-up*/
+.set-up{
+    background: url("../images/login-bg.gif") no-repeat;
+    margin: 50px;
+}
+.set-up img{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+/*End-set-up*/
+
+
+
+@media only screen and (max-width: 992px) {
+    /*List-menu*/
+    .list-menu i{
+        font-size: 5rem;
+    }
+    /*End-list-menu*/
+
+}
+
+@media only screen and (max-width: 768px) {
+    /*List-menu*/
+    .list-menu i{
+       font-size: 4rem;
+    }
+    .card-row-two{
+        margin-top: 20px;
+
+    }
+    /*End-list-menu*/
+
+    /*Appointment*/
+    .mode-btn,
+    .mode-radio{
+        margin-top: 5px;
+    }
+    /*End-appointment*/
+
+}
+@media only screen and (max-width: 576px) {
+    /*List-menu*/
+    .list-menu i{
+        font-size: 3rem;
+    }
+    .card-row-two{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .card-body-custom{
+        padding: 20px 0;
+    }
+    /*End-list-menu*/
+
+    .mode-btn,
+    .mode-radio{
+        margin-top: 5px;
+    }
+    /*End-create-appointment*/
+}
+
+

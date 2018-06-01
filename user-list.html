@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Nav-bar-->
+        <div class="row">
+            <div class="sidenav">
+                <div class="sidenav-head">
+                    <a href="home.html">
+                        <img src="images/navi_logo.gif" alt="Logo">
+                    </a>
+                </div>
+                <div class="sidenav-login">
+                    <img src="images/login.gif" alt="login">
+                </div>
+                <div class="sidenav-list text-center">
+                    <a href="appointment.html">
+                        <img src="images/schedule.gif" alt="schedule">
+                    </a>
+                    <a href="create-appointment.html">
+                        <img src="images/reserve.gif" alt="reserve">
+                    </a>
+                    <a href="set-up.html">
+                        <img src="images/setup.gif" alt="setup">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/room.gif" alt="room">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/manual_icon_white.gif" alt="manual_icon_white">
+                    </a>
+                </div>
+
+                <div class="sidenav-foot text-center">
+                    <a href="#top">
+                        <img src="images/top1.gif" alt="top1">
+                    </a>
+                    <a href="login-form.html">
+                        <img src="images/logout.gif" alt="logout">
+                    </a>
+                </div>
+                <div class="sidenav-language text-center">
+                    <a href="#">EN</a>
+                    <a href="#">&emsp;JP</a>
+                </div>
+
+            </div>
+            <nav class="navbar navbar-collapse navbar-light navbar-custom active-side-bar">
+                <a href="#" class="navbar-custom-icon">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="navbar-brand">&nbsp;Book a room</a>
+            </nav>
+        </div>
+        <!--End-nav-bar-->
+
+
+
+        <!--Main-->
+        <div id="main" class="main-active">
+            <div class="list-main row" style="margin: 0 auto 20px;">
+                <div class="col-md-5">
+                    <a href="#">User list </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#"><button class="btn btn-active">Add user</button></a>
+                </div>
+
+            </div>
+            <table class="table table-bordered table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Displayname</th>
+                    <th scope="col">Email 1</th>
+                    <th scope="col">Email 2</th>
+                    <th scope="col" class="text-center">Is Chairman</th>
+                    <th scope="col" class="text-center">Is Admin</th>
+                    <th scope="col" class="text-center">Set order
+                    <br><button type="button">Confirm</button>
+                    </th>
+                    <th scope="col" class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>donamkhanh</td>
+                    <td>Nam Khanh Do</td>
+                    <td>donamkhanh@gmail.com.vn</td>
+                    <td>me@donamkhanh.com</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">
+                        <input type="number" class="input-set-order" name="quantity">
+                    </td>
+                    <td class="text-center">
+                        <a href="#edit" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
+                        <a href="#del" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>khanhdn</td>
+                    <td>Nam Khanh Do</td>
+                    <td>donamkhanh@gmail.com.vn</td>
+                    <td>me@donamkhanh.com</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">Yes</td>
+                    <td class="text-center">
+                        <input type="number" class="input-set-order" name="quantity">
+                    </td>
+                    <td class="text-center">
+                        <a href="#edit" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
+                        <a href="#del" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--End-main-->
+
+
+    </div>
+</body>
+</html>

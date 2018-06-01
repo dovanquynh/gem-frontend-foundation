@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Nav-bar-->
+        <div class="row">
+            <div class="sidenav">
+                <div class="sidenav-head">
+                    <a href="home.html">
+                        <img src="images/navi_logo.gif" alt="Logo">
+                    </a>
+                </div>
+                <div class="sidenav-login">
+                    <img src="images/login.gif" alt="login">
+                </div>
+                <div class="sidenav-list text-center">
+                    <a href="appointment.html">
+                        <img src="images/schedule.gif" alt="schedule">
+                    </a>
+                    <a href="create-appointment.html">
+                        <img src="images/reserve.gif" alt="reserve">
+                    </a>
+                    <a href="set-up.html">
+                        <img src="images/setup.gif" alt="setup">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/room.gif" alt="room">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/manual_icon_white.gif" alt="manual_icon_white">
+                    </a>
+                </div>
+
+                <div class="sidenav-foot text-center">
+                    <a href="#top">
+                        <img src="images/top1.gif" alt="top1">
+                    </a>
+                    <a href="login-form.html">
+                        <img src="images/logout.gif" alt="logout">
+                    </a>
+                </div>
+                <div class="sidenav-language text-center">
+                    <a href="#">EN</a>
+                    <a href="#">&emsp;JP</a>
+                </div>
+
+            </div>
+            <nav class="navbar navbar-collapse navbar-light navbar-custom active-side-bar">
+                <a href="#" class="navbar-custom-icon">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="navbar-brand">&nbsp;Book a room</a>
+            </nav>
+        </div>
+        <!--End-nav-bar-->
+
+        <!--Main-->
+
+        <div id="main" class="main-active">
+            <div class="list-main row">
+                <div class="col-md-6">
+                    <a href="#">User list </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#"><button class="btn btn-active">Add user</button></a>
+                </div>
+
+            </div>
+            <div class="card card-appointment">
+               <div class="card-body">
+                   <form method="post">
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Username</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                               <input type="text" class="form-control" name="username">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-sm-12 col-form-label">Password</label>
+                           <div class="col-md-10 col-sm-12  col-xs-12">
+                               <input type="password" class="form-control" name="password">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-sm-12 col-form-label">Confirm Password</label>
+                           <div class="col-md-10 col-sm-12  col-xs-12">
+                               <input type="password" class="form-control" name="confirm-password">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">First name</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                               <input type="text" class="form-control" name="firstname">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Last name</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                               <input type="text" class="form-control" name="lastname">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Display name</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                               <input type="text" class="form-control" name="displayname">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Email address 1</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                                <input type="email" class="form-control" name="email1">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Email address 2</label>
+                           <div class="col-md-10 col-sm-12 col-xs-12">
+                                <input type="email" class="form-control" name="email2">
+                           </div>
+                       </div>
+
+                       <div class="form-group row no-margin">
+                           <label class="col-md-2 col-sm-12 col-sm-offse-1">Camera Display</label>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="camera1">
+                           </div>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="camera2">
+                           </div>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="camera2">
+                           </div>
+                       </div>
+
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-sm-offse-1">Name</label>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="name1">
+                           </div>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="name2">
+                           </div>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="form-control" name="name3">
+                           </div>
+                       </div>
+
+
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Language use in email</label>
+                           <div class="col-md-2 col-sm-12 col-xs-12">
+                               <select name="language" id="language" class="form-control"></select>
+                           </div>
+                       </div>
+
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Is Chairman</label>
+                           <div class="col-md-2 col-sm-12 col-xs-12">
+                               <select name="chairman" id="chairman" class="form-control"></select>
+                           </div>
+                       </div>
+
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Is Admin</label>
+                           <div class="col-md-2 col-sm-12 col-xs-12">
+                               <select name="admin" id="admin" class="form-control"></select>
+                           </div>
+                       </div>
+
+                       <div class="form-group row">
+                           <label class="col-md-2 col-sm-12 col-xs-12 col-form-label">Status</label>
+                           <div class="col-md-2 col-sm-12 col-xs-12">
+                               <select name="status" id="status" class="form-control"></select>
+                           </div>
+                       </div>
+
+                       <div class="form-group row form-btn">
+                           <div class="col-sm-3">
+                               <button type="submit" class="btn btn-save">Save</button>
+                           </div>
+                       </div>
+
+                   </form>
+               </div>
+            </div>
+
+
+
+        </div>
+
+        <!--End-main-->
+
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var date_input = $('.datetimepicker'); //our date input has the name "date"
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
+</body>
+</html>

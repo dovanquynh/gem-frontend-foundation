@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Nav-bar-->
+        <div class="row">
+            <div class="sidenav">
+                <div class="sidenav-head">
+                    <a href="home.html">
+                        <img src="images/navi_logo.gif" alt="Logo">
+                    </a>
+                </div>
+                <div class="sidenav-login">
+                    <img src="images/login.gif" alt="login">
+                </div>
+                <div class="sidenav-list text-center">
+                    <a href="appointment.html">
+                        <img src="images/schedule.gif" alt="schedule">
+                    </a>
+                    <a href="create-appointment.html">
+                        <img src="images/reserve.gif" alt="reserve">
+                    </a>
+                    <a href="set-up.html">
+                        <img src="images/setup.gif" alt="setup">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/room.gif" alt="room">
+                    </a>
+                    <a href="page-not-found.html">
+                        <img src="images/manual_icon_white.gif" alt="manual_icon_white">
+                    </a>
+                </div>
+
+                <div class="sidenav-foot text-center">
+                    <a href="#top">
+                        <img src="images/top1.gif" alt="top1">
+                    </a>
+                    <a href="login-form.html">
+                        <img src="images/logout.gif" alt="logout">
+                    </a>
+                </div>
+                <div class="sidenav-language text-center">
+                    <a href="#">EN</a>
+                    <a href="#">&emsp;JP</a>
+                </div>
+
+            </div>
+            <nav class="navbar navbar-collapse navbar-light navbar-custom active-side-bar">
+                <a href="#" class="navbar-custom-icon">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="navbar-brand">&nbsp;Book a room</a>
+            </nav>
+        </div>
+        <!--End-nav-bar-->
+
+
+
+        <!--Main-->
+        <div id="main" class="main-active">
+            <div class="set-up">
+                <div style="margin-left: 30px">
+                    <img src="images/menu_user_add.gif" alt="user-add"><br/>
+                    <img src="images/menu_user_add.gif" alt="user-add"><br/>
+                    <img src="images/menu_user_add.gif" alt="user-add"><br/>
+                    <img src="images/menu_user_add.gif" alt="user-add">
+                </div>
+            </div>
+        </div>
+        <!--End-main-->
+
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var date_input = $('.datetimepicker'); //our date input has the name "date"
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
+</body>
+</html>
