@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -18,48 +19,33 @@
 </head>
 <body>
     <div class="container-fluid">
-        <!--Nav-bar-->
+        <!--Side-bar & Navbar-->
         <div class="row">
-            <div class="sidenav">
-                <div class="sidenav-head">
+            <div class="sidebar">
+                <div class="sidebar-head">
                     <a href="home.html">
                         <img src="images/navi_logo.gif" alt="Logo">
                     </a>
                 </div>
-                <div class="sidenav-login">
+                <div class="sidebar-login">
                     <img src="images/login.gif" alt="login">
                 </div>
-                <div class="sidenav-list text-center">
-                    <a href="appointment.html">
-                        <img src="images/schedule.gif" alt="schedule">
-                    </a>
-                    <a href="create-appointment.html">
-                        <img src="images/reserve.gif" alt="reserve">
-                    </a>
-                    <a href="set-up.html">
-                        <img src="images/setup.gif" alt="setup">
-                    </a>
-                    <a href="page-not-found.html">
-                        <img src="images/room.gif" alt="room">
-                    </a>
-                    <a href="page-not-found.html">
-                        <img src="images/manual_icon_white.gif" alt="manual_icon_white">
-                    </a>
-                </div>
+                <div class="sidebar-list">
+                    <ul class="menu">
+                        <li class="css-sprite-schedule"><a href="appointment.html"></a></li>
+                        <li class="css-sprite-reserve"><a href="create-appointment.html"></a></li>
+                        <li class="css-sprite-setup"><a href="set-up.html"></a></li>
+                        <li class="css-sprite-room"><a href="page-not-found.html"></a></li>
+                        <li class="css-sprite-manual"><a href="page-not-found.html"></a></li>
+                        <li class="css-sprite-top"><a href="#top"></a></li>
+                        <li class="css-sprite-logout"><a href="login-form.html"></a></li>
+                    </ul>
 
-                <div class="sidenav-foot text-center">
-                    <a href="#top">
-                        <img src="images/top1.gif" alt="top1">
-                    </a>
-                    <a href="login-form.html">
-                        <img src="images/logout.gif" alt="logout">
-                    </a>
+                    <div class="sidebar-language text-center">
+                        <a href="#">EN</a>
+                        <a href="#">&emsp;JP</a>
+                    </div>
                 </div>
-                <div class="sidenav-language text-center">
-                    <a href="#">EN</a>
-                    <a href="#">&emsp;JP</a>
-                </div>
-
             </div>
             <nav class="navbar navbar-collapse navbar-light navbar-custom active-side-bar">
                 <a href="#" class="navbar-custom-icon">
@@ -68,7 +54,8 @@
                 <a href="#" class="navbar-brand">&nbsp;Book a room</a>
             </nav>
         </div>
-        <!--End-nav-bar-->
+
+        <!--End-sidebar&navbar-->
 
         <!--Main-->
 

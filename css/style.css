@@ -79,65 +79,7 @@ h3{
 
 
 
-.navbar-custom{
-    background: #DFDFDF;
-    height: 40px;
-    display: block;
-}
-.active-side-bar{
-    margin-left: 208px;
-}
-.navbar-toggler-custom{
-    padding: 0;
-}
-.navbar-custom a.navbar-brand{
-    color: #b40404;
-    vertical-align: middle;
-    font-size: 15px;
-}
-.navbar-custom a.navbar-brand:hover{
-    color: #b40404;
-}
-a.navbar-custom-icon{
-    color: #727272;
-    text-decoration: none;
-}
 
-.toggler-icon-custom{
-    color: #ff9600;
-}
-/*End-navbar*/
-
-/*Side-bar*/
-.sidenav {
-    height: 100%;
-    width: 208px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: auto;
-    background-color: #000000;
-    overflow-y: hidden;
-}
-.sidenav-login{
-    margin-top: -4px;
-}
-
-.sidenav-list img{
-    padding-bottom: 5px;
-}
-.sidenav-foot{
-    padding-top: 40px;
-}
-.sidenav-language{
-    padding-top: 15px;
-}
-.sidenav-language a{
-    color: #00B481;
-    text-decoration: none;
-}
-/*End-side-bar*/
 
 
 /*Welcome*/
@@ -180,15 +122,62 @@ a.navbar-custom-icon{
     background: #1F1F1F;
     color: #ffffff;
 }
-.calendar-detail{
+.room{
+    background: #1F1F1F;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.room-card{
+    border:none;
+}
+.room-card-header{
+    background: #3B3B3B;
+}
+.room-card-body{
     background: #1F1F1F;
 }
+.calendar-detail{
+    background: #1F1F1F;
+    padding: 10px;
+}
+.calendar-detail h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+.calendar-detail-head{
+    margin-bottom: 20px;
+}
+.calendar-detail-content{
+    border: 2px solid #ffffff;
+}
+
+.table-calendar{
+    color: #ffffff;
+}
+.table-calendar thead th{
+    border-bottom: none!important;
+}
+.table-calendar td, .table-calendar th{
+    border-top: 1px solid #959a9e;
+}
+.w-15{
+    width: 15%;
+}
+.w-70{
+    width: 70%;
+}
+.calendar-icon{
+    font-size: 10px;
+}
+
+
 .card-appointment{
     background: #1F1F1F;
     color: #ffffff;
     width: 70%;
 
 }
+
 .mode-btn{
     background: #2A2A2A;
     border-color: #2A2A2A;
@@ -211,6 +200,7 @@ a.navbar-custom-icon{
 }
 
 /*End-appointment*/
+
 
 /*Page-user*/
 .list-main{
