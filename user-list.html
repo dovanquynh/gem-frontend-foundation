@@ -57,16 +57,19 @@
 
         <!--Main-->
         <div id="main" class="main-active">
-            <div class="list-main row" style="margin: 0 auto 20px;">
-                <div class="col-md-5">
-                    <a href="#">User list </a>
+            <div class="list-main row text-center">
+                <div class="col-xl-2 offset-xl-3 col-lg-2 offset-lg-3 col-md-3 offset-md-3">
+                    <a href="user-list.html">User list </a>
                 </div>
-                <div class="col-md-2">
-                    <a href="#"><button class="btn btn-active">Add user</button></a>
+                <div class="col-xl-2 col-lg-2 col-md-2">
+                    <a href="add-user.html">
+                        <button class="btn btn-active">Add user</button>
+                    </a>
                 </div>
 
             </div>
-            <table class="table table-bordered table-dark">
+            <div class="table-responsive">
+                <table class="table table-bordered table-dark">
                 <thead>
                 <tr>
                     <th scope="col">Username</th>
@@ -108,13 +111,18 @@
                         <input type="number" class="input-set-order" name="quantity">
                     </td>
                     <td class="text-center">
-                        <a href="#edit" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
-                        <a href="#del" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                        <a href="#edit" class="btn btn-secondary">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a href="#del" class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
                     </td>
                 </tr>
 
                 </tbody>
             </table>
+            </div>
         </div>
         <!--End-main-->
 

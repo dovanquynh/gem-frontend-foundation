@@ -8,11 +8,20 @@ h3{
     font-weight: 300;
 }
 #main{
-    padding-top: 10px;
+    padding-top: 60px;
 }
 .main-active{
     margin-left: 208px;
 }
+.active-side-bar{
+    margin-left: 208px;
+}
+.no-active-side-bar{
+    display: none;
+    transition: display 1s ;
+
+}
+
 
 /*Form-login*/
 .login{
@@ -76,7 +85,6 @@ h3{
     text-decoration: none;
 }
 /*End-page-404*/
-
 
 
 
@@ -175,7 +183,6 @@ h3{
     background: #1F1F1F;
     color: #ffffff;
     width: 70%;
-
 }
 
 .mode-btn{
@@ -204,22 +211,27 @@ h3{
 
 /*Page-user*/
 .list-main{
-    width: 70%;
-    margin-bottom: 20px;
+    margin: 0 auto;
     line-height: 4;
-    text-align: center;
 }
-.list-main a{
+.list-main-edit-user{
+    margin-right: 30%;
+    line-height: 4;
+}
+.list-main a,
+.list-main-edit-user a{
      color: #ffffff;
  }
-.list-main a:hover{
+.list-main a:hover,
+.list-main-edit-user a:hover{
     text-decoration: none;
 }
+
 
 .btn-active{
     background: #305074;
     color: #ffffff;
-    padding: 10px 40px;
+    /*padding: 10px 40px;*/
 }
 .input-set-order{
     width: 70px;
@@ -251,15 +263,29 @@ h3{
 /*Set-up*/
 .set-up{
     background: url("../images/login-bg.gif") no-repeat;
+    width: 100%;
+    background-size: contain;
     margin: 50px;
 }
 .set-up img{
     margin-bottom: 10px;
     padding: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /*End-set-up*/
+
+
+@media screen and (max-width: 1200px){
+    .calendar-detail{
+        margin: 20px;
+    }
+    .card-appointment{
+        width: 90%;
+    }
+}
 
 
 
@@ -269,6 +295,9 @@ h3{
         font-size: 5rem;
     }
     /*End-list-menu*/
+    .card-appointment{
+        width: 100%;
+    }
 
 }
 
@@ -289,10 +318,16 @@ h3{
         margin-top: 5px;
     }
     /*End-appointment*/
+    .card-appointment{
+        width: 100%;
+    }
 
 }
 @media only screen and (max-width: 576px) {
     /*List-menu*/
+    .welcome h1{
+        font-size: 30px;
+    }
     .list-menu i{
         font-size: 3rem;
     }
@@ -310,6 +345,10 @@ h3{
         margin-top: 5px;
     }
     /*End-create-appointment*/
+
+    .card-appointment{
+        width: 100%;
+    }
 }
 
 
