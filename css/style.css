@@ -9,6 +9,7 @@ h3{
 }
 #main{
     padding-top: 60px;
+    padding-bottom: 60px;
     transition: 0.5s;
 }
 
