@@ -9,18 +9,9 @@ h3{
 }
 #main{
     padding-top: 60px;
+    transition: 0.5s;
 }
-.main-active{
-    margin-left: 208px;
-}
-.active-side-bar{
-    margin-left: 208px;
-}
-.no-active-side-bar{
-    display: none;
-    transition: display 1s ;
 
-}
 
 
 /*Form-login*/

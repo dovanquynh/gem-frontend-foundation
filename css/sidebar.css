@@ -1,4 +1,28 @@
+
+/*Toggle button*/
+.main-active{
+    margin-left: 208px;
+    transition: 0.5s;
+}
+.main-padding{
+    padding-left: 60px;
+    /*padding-top: 120px!important;*/
+}
+.active-nav-bar{
+    margin-left: 208px;
+    transition: 0.5s;
+}
+.no-active-side-bar{
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+
+
+
+
+
 /*Navbar*/
+
 .navbar-custom{
     background: #DFDFDF;
     height: 40px;
@@ -7,6 +31,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    transition: 0.5s;
 }
 .navbar-custom button{
     /*border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);*/
@@ -50,6 +75,7 @@ a.navbar-custom-icon{
     right: auto;
     background-color: #000000;
     overflow-y: hidden;
+    transition: 0.5s;
 }
 .sidebar-login{
     margin-top: -4px;
