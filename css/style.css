@@ -19,7 +19,7 @@ h3{
 .login{
     color: #ffffff;
     font-weight: normal;
-    margin: 20% auto;
+    margin: 15% auto;
     max-width: 500px;
     background: #2A2A2A;
     border-radius: 5px;
@@ -61,6 +61,13 @@ h3{
     border-radius:4px;
     border:1px solid #305074;
     background: #305074;
+}
+#username-error,
+#password-error{
+    color: red;
+}
+#message{
+    margin: 0 auto;
 }
 /*End-form-login*/
 

@@ -10,28 +10,113 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
-    <form method="get" action="login-form.html">
+
+    <div class="list-main row text-center">
+        <div id="message"></div>
+    </div>
+    <form id="form-login">
         <div class="login">
             <div class="login-header">
                 <h3>Login</h3>
             </div>
             <div class="login-form">
                 <h3>Username</h3>
-                <input type="text" class="login-input" name="name">
-                <br>
+                <input type="text" class="login-input" name="username" >
+                <span id="username-error"></span>
                 <h3>Password</h3>
                 <input type="password" class="login-input" name="password">
-                <br>
-                <button type="submit" class="login-btn"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</button>
+                <span id="password-error"></span>
+                <button type="button" class="login-btn" id="btn-submit" onclick="login()">
+                    <i class="fas fa-sign-in-alt"></i>&nbsp;Login
+                </button>
                 <br>
             </div>
         </div>
     </form>
 
 </div>
+
+
+<script src="js/checkLogin.js"></script>
+<script>
+    var username = document.querySelector('[name="username"]');
+    var password = document.querySelector('[name="password"]');
+    var btnSubmit = document.querySelector('#btn-submit');
+    username.onkeyup = function() {
+        if (!checkRegx(username.value, REGEX_USERNAME)) {
+            showError(username, "Tên không hợp lệ");
+        } else {
+            username.classList.remove('is-invalid');
+            hiddenUsernameError();
+        }
+    }
+    username.onblur = function() {
+        if (username.value === '') {
+            showError(username, 'Vui lòng nhập tên');
+        } else {
+            username.classList.remove('is-invalid');
+            hiddenUsernameError();
+        }
+    }
+    password.onkeyup = function() {
+        if (!checkRegx(password.value, REGEX_PASSWORD)) {
+            showError(password, "Mật khẩu không hợp lệ");
+        } else {
+            password.classList.remove('is-invalid');
+            hiddenPasswordError();
+        }
+    }
+    password.onblur = function() {
+        if (password.value === '') {
+            showError(password, 'Vui lòng nhập mật khẩu');
+        } else {
+            password.classList.remove('is-invalid');
+            hiddenPasswordError();
+        }
+    }
+
+//    btnSubmit.onclick = function() {
+//        var data = {
+//            username: username.value,
+//            password: password.value
+//        };
+//        var mss = dataAjax({
+//            url: 'https://training.gemvietnam.com/dummy-api/users.json',
+//            action: 'get',
+//            data: data
+//        });
+//    }
+    function login(){
+        var username = document.querySelector('[name="username"]').value;
+        var password = document.querySelector('[name="password"]').value;
+        var jhttp = new XMLHttpRequest();
+
+        jhttp.onreadystatechange = function(){
+            if(this.readyState ==4 && this.status == 200){
+                var html = '';
+                var obj = JSON.parse(this.responseText);
+                if(obj.length >0){
+                    for(var i= 0 ; i < obj.length; i++){
+                        if(username == obj[i].username && password == obj[i].password ){
+                            html = '<div class="alert alert-success" role="alert">Thành công ! </div>';
+                            break;
+                        }
+                        html = '<div class="alert alert-danger" role="alert">Thất bại ! </div>';
+                    }
+                }
+                document.getElementById("message").innerHTML = html;
+//                 console.log(html);
+                // console.log(document.getElementById("message"))
+            }
+        }
+        jhttp.open("GET", "https://training.gemvietnam.com/dummy-api/users.json", true);
+        jhttp.send();
+    }
+</script>
 </body>
 </html>
