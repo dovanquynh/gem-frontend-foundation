@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=620" />
+    <title>Location</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/location.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">Search nearby restaurants</div>
+        <div class="card-body">
+            <div class="form-select row">
+
+                    <div class="col-xl-2 offset-xl-4 col-md-3 offset-md-3 ">
+                        <select name="select-search" id="select-search" class="form-control">
+                            <option value="1000">1 kilometers</option>
+                            <option value="3000">3 kilometers</option>
+                            <option value="5000">5 kilometers</option>
+                            <option value="8000">8 kilometers</option>
+                            <option value="10000">10 kilometers</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-1 col-md-1">
+                        <button type="button" class="btn btn-primary" onclick="myMap()">Search</button>
+                    </div>
+
+            </div>
+            <div class="result">
+                <div id="map"></div>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+    var x = document.getElementById("demo");
+    function myMap() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Trình duyệt của bạn không hỗ trợ, vui lòng thử lại !");
+        }
+
+
+
+        //Radius Circle
+        var selectSearch = document.getElementById('select-search');
+        var a;
+        function radiusFunc(){
+            a = Number(selectSearch.options[selectSearch.selectedIndex].value);
+            return a;
+        }
+
+        //Show Position
+        function showPosition(position) {
+            x.innerHTML = "Vĩ độ : " + position.coords.latitude + "<br> Kinh độ : " + position.coords.longitude;
+            var mapOptions = {
+                center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+
+            //current position is red marker
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            });
+            marker.setMap(map);
+
+
+            var circle = new google.maps.Circle({
+                map: map,
+                radius: radiusFunc(),    // 10 miles in metres
+                fillColor: '#6d9faa',
+                strokeColor: 'blue',
+                strokeWeight: 1,
+                strockOpacity: 0.8,
+            });
+            circle.bindTo('center', marker, 'position');
+
+
+        }
+
+    }
+
+    //Radius Circle
+//    var selectSearch = document.getElementById('select-search');
+////        var selectValue = Number(selectSearch.options[selectSearch.selectedIndex].value);
+//    var a;
+//    function radiusFunc(){
+//        a = Number(selectSearch.options[selectSearch.selectedIndex].value);
+//        return a;
+//    }
+    //console.log(radiusFunc());
+//    console.log('radius ' + selectRadius());
+
+
+//    //Show Position
+//    function showPosition(position) {
+//        x.innerHTML = "Vĩ độ : " + position.coords.latitude + "<br> Kinh độ : " + position.coords.longitude;
+//        var mapOptions = {
+//            center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+//            zoom: 15,
+//            mapTypeId: google.maps.MapTypeId.HYBRID
+//        }
+//
+//        //current position is red marker
+//        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+//        var marker = new google.maps.Marker({
+//            position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+//        });
+//        marker.setMap(map);
+//        var a = Number(selectSearch.options[selectSearch.selectedIndex].value);
+//        console.log(typeof (a));
+//        var circle = new google.maps.Circle({
+//            map: map,
+//            radius: radiusFunc(),    // 10 miles in metres
+//            fillColor: '#6d9faa',
+//            strokeColor: 'blue',
+//            strokeWeight: 1,
+//            strockOpacity: 0.8,
+//        });
+//        circle.bindTo('center', marker, 'position');
+//
+//
+//    }
+
+
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9cdufBUYyJSNH4LThENamjkUmAKy0bIU&callback=myMap"></script>
+</body>
+</html>
