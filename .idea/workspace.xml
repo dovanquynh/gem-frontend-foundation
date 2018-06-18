@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048b82f4-5a8d-4da7-8510-5185955ebbe9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/location.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/location.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/date.html" afterPath="$PROJECT_DIR$/date.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-list.html" afterPath="$PROJECT_DIR$/user-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location.html" afterPath="$PROJECT_DIR$/location.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,29 +17,12 @@
       <file leaf-file-name="location.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="location.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/location.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add-user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="992">
+              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+              <folding>
+                <marker date="1529313161824" expanded="true" signature="4712:4718" ph=" " />
+                <marker date="1529313161824" expanded="true" signature="4748:4762" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -80,7 +60,6 @@
         <option value="$PROJECT_DIR$/home-without-sidebar.html" />
         <option value="$PROJECT_DIR$/css/test.html" />
         <option value="$PROJECT_DIR$/page-not-found.html" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/css/sidebar-test.css" />
         <option value="$PROJECT_DIR$/css/sidebar.css" />
         <option value="$PROJECT_DIR$/js/menu.js" />
@@ -98,6 +77,7 @@
         <option value="$PROJECT_DIR$/user-list.html" />
         <option value="$PROJECT_DIR$/add-user.html" />
         <option value="$PROJECT_DIR$/css/location.css" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/location.html" />
       </list>
     </option>
@@ -112,9 +92,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1871" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="51" />
+    <option name="width" value="1910" />
     <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -133,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,13 +125,12 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,26 +161,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.location.html">
+  <component name="RunManager" selected="JavaScript Debug.test.html">
     <configuration name="checkLogin.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="checkLogin.js" working-dir="$PROJECT_DIR$/js" />
     <configuration name="date.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/date.html" />
     <configuration name="location.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/location.html" />
-    <configuration name="login-form.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/login-form.html" />
+    <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/test.html" />
     <configuration name="user-list.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/user-list.html" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.user-list.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.login-form.html" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.checkLogin.js" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.date.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.checkLogin.js" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.date.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.user-list.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.date.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.checkLogin.js" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.login-form.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.user-list.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.date.html" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.checkLogin.js" />
       </list>
     </recent_temporary>
   </component>
@@ -244,17 +224,18 @@
       <workItem from="1528881739630" duration="4685000" />
       <workItem from="1528941154149" duration="652000" />
       <workItem from="1529026489393" duration="18900000" />
+      <workItem from="1529285232184" duration="12389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151131000" />
+    <option name="totallyTimeSpent" value="163520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1871" height="1014" extended-state="0" />
+    <frame x="0" y="23" width="1910" height="1014" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14003207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13717277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -466,7 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/sidebar-test.css" />
     <entry file="file://$PROJECT_DIR$/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="76" column="16" lean-forward="false" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1229">
           <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
           <caret line="308" column="53" lean-forward="true" selection-start-line="308" selection-start-column="53" selection-end-line="308" selection-end-column="53" />
-          <folding>
-            <marker date="1529031456983" expanded="true" signature="8018:8035" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,11 +578,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="9" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="66" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/location.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="992">
+          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+          <folding>
+            <marker date="1529313161824" expanded="true" signature="4712:4718" ph=" " />
+            <marker date="1529313161824" expanded="true" signature="4748:4762" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
