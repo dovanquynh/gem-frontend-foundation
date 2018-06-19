@@ -58,11 +58,11 @@
 
         //Radius Circle
         var selectSearch = document.getElementById('select-search');
-        var a;
+        var radius;
 
         function radiusFunc() {
-            a = Number(selectSearch.options[selectSearch.selectedIndex].value);
-            return a;
+            radius = Number(selectSearch.options[selectSearch.selectedIndex].value);
+            return radius;
         }
 
         //Show Position
@@ -115,7 +115,7 @@
 
 
             function createMarker(place) {
-                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+//                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
                 var placeLoc = place.geometry.location;
                 var marker = new google.maps.Marker({
                     map: map,
@@ -124,8 +124,6 @@
                 });
 
                 google.maps.event.addListener(marker, 'click', function() {
-//                    infowindow.setContent(place.name);
-//                    infowindow.open(map, this);
 
                     infowindow.setContent('<div><br><strong>' + place.name + '</strong></br>' +
                         'Address: ' + place.vicinity + '</br>' +
